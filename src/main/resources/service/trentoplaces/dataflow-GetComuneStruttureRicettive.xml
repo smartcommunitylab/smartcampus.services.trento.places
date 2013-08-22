@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataflow xmlns="http://www.example.org/mml-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/mml-schema mml-schema.xsd ">
+
+	<script outputVar="output" writeMethod="addAll" writeAction="append">
+		<className>eu.trentorise.smartcampus.service.trento.places.ComuneKMLConverter</className>
+		<method>readStruttureRicettive</method>
+		<variables>
+		</variables>
+	</script>
+
+</dataflow>

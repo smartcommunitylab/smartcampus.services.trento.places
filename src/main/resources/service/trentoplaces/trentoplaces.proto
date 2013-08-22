@@ -1,0 +1,15 @@
+package smartcampus.service.trento.places.data.message;
+
+import "core.proto";
+
+message Place {
+	required string name = 1;
+	optional string street = 2;
+	required string town = 3;
+	optional string province = 4;
+	optional string number = 5;
+	optional double latitude = 6;
+	optional double longitude = 7;
+	repeated string categories = 8;
+	required string source = 9;
+}

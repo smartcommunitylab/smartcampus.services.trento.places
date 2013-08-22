@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-definition xmlns="http://www.example.org/interface-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/interface-schema ../interface-schema.xsd ">
+
+	<interface serviceURI="smartcampus.service.trento.places">
+		<operation name="GetComuneTrentoPubbliciEsercizi">
+			<output type="smartcampus.service.trento.places.data.message.Trentoplaces$Place" repeated="true"/>
+		</operation>
+		<operation name="GetComuneStruttureRicettive">
+			<output type="smartcampus.service.trento.places.data.message.Trentoplaces$Place" repeated="true"/>
+		</operation>				
+	</interface>
+
+	<implementation package="smartcampus.service.trento.places">
+		<operationImpl name="GetComuneTrentoPubbliciEsercizi"/>
+		<operationImpl name="GetComuneStruttureRicettive"/>
+	</implementation>	
+
+
+
+</service-definition>
